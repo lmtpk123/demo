@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_productCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="生成二维码" />
+
+    <Button
+        android:id="@+id/btn_wxpay_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="扫码支付，威信生成二维码" />
+
+    <Button
+        android:id="@+id/btn_zfbpay_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="扫码支付，支付宝生成二维码" />
+
+    <Button
+        android:id="@+id/btn_ylpay_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="扫码支付，银联生成二维码" />
+
+    <Button
+        android:id="@+id/btn_scan_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="扫描二维码" />
+
+    <TextView
+        android:id="@+id/tv_paytype_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#00ff00"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/ig_code"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerInside" />
+
+    <ImageView
+        android:id="@+id/ig_ybcode"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerInside" />
+</LinearLayout>
