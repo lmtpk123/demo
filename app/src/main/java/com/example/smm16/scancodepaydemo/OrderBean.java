@@ -6,7 +6,7 @@ public class OrderBean {
     private long id;//订单号
     private long dealId;//交易号
     private String orderName;
-//    private String orderTime;//订单时间
+    private String orderTime;//订单时间
     private float price;//订单价格
 
     public OrderBean(long id, long dealId, String orderName, float price) {
@@ -53,12 +53,21 @@ public class OrderBean {
         this.price = price;
     }
 
+    public String getOrderTime() {
+        return orderTime;
+    }
+
+    public void setOrderTime(String orderTime) {
+        this.orderTime = orderTime;
+    }
+
     @Override
     public String toString() {
         return "OrderBean{" +
                 "id=" + id +
                 ", dealId=" + dealId +
                 ", orderName='" + orderName + '\'' +
+                ", orderTime='" + orderTime + '\'' +
                 ", price=" + price +
                 '}';
     }
